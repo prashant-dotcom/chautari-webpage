@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-red: rgb(169, 5, 5);
+  --default-clr: rgba(249, 247, 233, 0.891);
+  --brndclr: #c3f1ef;
+
+  --font1: "Inria Sans", sans-serif;
+  --font2: "Roboto Condensed", sans-serif;
+
+  --fw-light: 200;
+  --fw-normal: 400;
+  --fw-bold: 600;
+
+  --fnt200: 0.9275rem;
+  --fnt400: 1.25rem;
+  --fnt600: 2.5rem;
+}
+html {
+  font-family: var(--font1);
+  font-size: 18px;
+  /* background-color: var(--default-clr); */
+}
+@media all and (min-width>400px) and (max-width<700px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  line-height: 1.4;
+}
+.container {
+  display: grid;
+}
+.section1 {
+  min-height: 10rem;
+  background-color: var(--brndclr);
+  max-height: 234.89px;
+}
+.imgcont {
+  width: 60%;
+  margin-right: auto;
+  margin-left: 20px;
+}
+@media (min-width: 700px) {
+  .imgcont {
+    max-width: 415px;
+  }
+}
+
+.section1 img,
+.logo img,
+.bodyy img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.section2 {
+  min-height: 4rem;
+  background-color: var(--default-clr);
+  border-bottom: 2px solid var(--dark-red);
+  display: flex;
+  justify-content: space-around;
+  /* color: white; */
+}
+.section2 .nav-btn {
+  display: none;
+}
+.section2 .div1 {
+  width: 60%;
+  /* flex-shrink: 5; */
+  padding-top: 5px;
+}
+
+.div1 ul li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: white;
+
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+}
+.sidebar li {
+  width: 100%;
+  font-size: 20px;
+}
+
+.section2 .div2 {
+  width: 40%;
+  /* flex-shrink: 1; */
+  display: flex;
+  justify-content: center;
+}
+.div2 button {
+  background-color: var(--dark-red);
+  border: none;
+  border-radius: 15px;
+  font-size: var(--fnt200);
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  width: 50%;
+  max-width: 140px;
+  margin: 30px;
+  transition: 0.1s ease-in-out;
+}
+.div2 button:hover {
+  background-color: rgb(2, 111, 48);
+}
+.div2 button a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 817px) {
+  .section2 .div2 {
+    flex-shrink: 0;
+  }
+}
+.section3 {
+  background-color: var(--default-clr);
+  display: grid;
+  gap: 10px;
+}
+.section3 > * {
+  margin: 20px;
+
+  margin-left: 40px;
+}
+img {
+  display: block;
+  width: 90%;
+  max-width: 463px;
+  margin-bottom: 10px;
+}
+.para1,
+.para2 {
+  max-width: 635px;
+}
+@media (min-width: 750px) {
+  .flex-item {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .flex-item > * {
+    flex: 1;
+    margin-left: 20px;
+  }
+  .bodyy {
+    width: 90%;
+  }
+  .secondelement {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.section4 {
+  min-height: 10rem;
+  background-color: var(--brndclr);
+}
+.section4 {
+  width: 100%;
+
+  display: grid;
+
+  gap: 1rem;
+}
+@media (min-width: 800px) {
+  .section4 {
+    display: flex;
+    justify-content: space-around;
+    min-height: 350px;
+  }
+  .section4 > * {
+    flex: 1;
+  }
+  .foot {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+  }
+}
+.section4 > div {
+  min-height: 250px;
+  text-align: left;
+  margin-left: 20px;
+}
+.logo {
+  width: 50%;
+  max-height: 12rem;
+}
+
+.footer {
+  width: 70%;
+  /* text-align: center; */
+}
+.foot ul {
+  list-style: none;
+}
+.social ul {
+  list-style: none;
+  display: flex;
+}
+.social ul > * {
+  margin: 5px;
+}
+@media (max-width: 815px) {
+  .section2 .div1 {
+    width: 30%;
+  }
+  .section2 .div2 {
+    width: 70%;
+  }
+  .navbar .hideOnMobile {
+    display: none;
+  }
+}
+@media (min-width: 814px) {
+  .section2 .hideOnDesk {
+    display: none;
+  }
+}

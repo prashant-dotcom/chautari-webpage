@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(228, 230, 231, 0.909);
+}
+form {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.1),
+    -2px 2px 3px 2px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  background-color: white;
+  max-width: 550px;
+  height: 560px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: "Inria Sans", sans-serif;
+}
+form label {
+  display: inline-block;
+  font-size: 23px;
+  margin: 5px;
+}
+form input {
+  height: 27px;
+  font-size: 18px;
+  width: 90%;
+  max-width: 410px;
+  margin: 3px;
+  padding-left: 5px;
+  border: 1px solid black;
+}
+div button {
+  margin-top: 30px;
+  min-width: 100px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  background-color: grey;
+  cursor: pointer;
+}
+.cancel a {
+  text-decoration: none;
+  color: white;
+}
+.signup {
+  background-color: rgb(105, 211, 246);
+}
+.end {
+  margin-top: 10px;
+  font-size: 17px;
+}
+.end p a {
+  text-decoration: none;
+}
+span {
+  color: blue;
+}
